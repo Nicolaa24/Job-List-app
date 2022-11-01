@@ -8,8 +8,8 @@ import { HiOutlineBookmark } from 'react-icons/hi';
 import Moment from 'react-moment';
 import { v4 as uuidv4 } from 'uuid';
 
-import { JobDetail } from '../types/interface';
-import { ContactInfo } from '../components/JobDetails/ContactInfo';
+import { JobDetail } from '../../types/interface';
+import { ContactInfo } from '../../components/JobDetails/ContactInfo';
 
 interface Props {
   id:number
