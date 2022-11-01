@@ -6,5 +6,6 @@
   body {
     min-height: 100vh;
     font-family: 'Poppins', sans-serif;
+    background: rgb(225, 227, 231)
   }
 }

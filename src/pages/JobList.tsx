@@ -1,10 +1,11 @@
 import React from 'react'
 
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+
 
 import { JobDetail } from '../types/interface';
-import { JobItem } from '../components/JobItem';
+import { JobItem } from '../components/JobList/JobItem';
+import { Pagination } from '../components/JobList/Pagination';
 
 
 interface Props {
@@ -35,17 +36,15 @@ export const JobList: React.FC<Props> = ({ describeJobId }) => {
   
 
   return (
-    <div className=' flex flex-col mx-[260px] mt-[29px]  w-[1400px] h-[164px]  px-4 py-6'>
+    <div className=' flex flex-col mt-[29px] mx-auto w-[1400px] h-[164px]  px-4 py-6 
+    sm:w-[396px] sm:h-[206px] sm:m-2'>
 
       {jobList.map((item, index) => (
-        <JobItem props={item} describeJobId={describeJobId} index={index} />
+        <JobItem props={item} describeJobId={describeJobId} index={index} key={item.id} />
       ))}
 
-      <div className='w-[515px] h-[52px] text-center m-auto  bg-slate-700 mt-[49px] mb-[64px] '>
-        <span>1</span>
-        <span>1</span>
-        <span>1</span>
-      </div>
+     <Pagination/>
+      
     </div>
   )
 };
