@@ -52,7 +52,7 @@ export const JobItem: React.FC<Props> = ({ props, describeJobId, index }) => {
         <div className='flex flex-col'>
           <h3 className='text-base font-normal text-descriptionColor  mb-2 sm:text-base'>Department name: {props.name}</h3>
           <div className='flex items-center text-center sm:mb-5'>
-            <ImLocation size={18} className="text-descriptionColor mr-2" />
+            <ImLocation size={18} className="text-descriptionColor mr-2 cursor-pointer" />
             <span className='text-base font-normal text-descriptionColor sm:text-base'>
               {location}
             </span>
