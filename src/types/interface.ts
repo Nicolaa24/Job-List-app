@@ -7,7 +7,7 @@ export interface JobDetail {
   salary: string;
   address: string;
   benefits: string[];
-  location: Location;
+  location: JobLocation;
   pictures: string[];
   createdAt: string;
   updatedAt: Date;

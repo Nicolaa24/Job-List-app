@@ -3,7 +3,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 
 import { JobList, JobDetails } from "./pages";
-import { ROUTES } from "./utils/constans/routes";
+import { ROUTES } from "./utils";
 
 export const App = () => {
   const [jobID, setJobId] = React.useState(0);

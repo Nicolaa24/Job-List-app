@@ -2,14 +2,17 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-     screens: {
-      'lg': {'max':'992px'},
+    screens: {
+      'xl': {'max':'1980px'},
+      'lg': {'max':'1240px'},
       'md': {'max':'768px'},
-      'sm': {'max':'480px'},
+      'sm': { 'max': '480px' },
+      'xs': {'max': '400px'}
     },
     extend: {
       colors: {
         BackgroundColor: '#EFF0F5',
+        modileBg: ' #F5F5F5',
         titleColor: '#3A4562',
         descriptionColor: '#878D9D',
         paginationArrow: '#7D859C',
@@ -24,7 +27,7 @@ module.exports = {
         benefits: 'rgba(255, 207, 0, 0.15)',
         yellowBorder: '#FFCF00',
         benefitsYellow: '#988B49',
-        blue : '#55699E'
+        blue: '#55699E'
       }
     },
   },

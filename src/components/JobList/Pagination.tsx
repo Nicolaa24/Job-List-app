@@ -19,7 +19,7 @@ export const Pagination: React.FC<Props> = ({ jobPerPage, totalJobs, paginate, n
   }
 
   return (
-    <div className='w-[515px] h-[52px] flex justify-between items-center text-center m-auto  bg-white mt-[49px] mb-[64px] rounded-[10px] '>
+    <div className='w-[515px] sm:max-w-full  h-[52px] flex justify-between items-center text-center m-auto  bg-white mt-[49px] mb-[64px] sm:mb-[17px] rounded-[10px] '>
        
       <div className='h-full w-[12%]'>
         <TiChevronLeft size={19} className='my-4 ml-6 mr-8 w-full cursor-pointer border-r-2 border-paginationArrow text-paginationArrow '
